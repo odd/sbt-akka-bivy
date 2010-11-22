@@ -40,7 +40,7 @@ trait AkkaKernelDeployment extends DefaultProject {
    * Defaults to akka kernel, but can be overriden.
    * For example, I have a project which flushes certain caches before booting akka and uses a custom class
    */
-  def akkaKernelBootClass = "se.scalablesolutions.akka.kernel.Main"
+  def akkaKernelBootClass = "akka.kernel.Main"
 
   /** 
    * Where to find an akka config to work off of. By default we assume it's in 
